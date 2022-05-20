@@ -1,0 +1,147 @@
+ul {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5; 
+  font-family: Georgia, serif; 
+  }
+
+  #hoved {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  }
+  h1, h2 {
+    font-family: Arial, sans-serif;
+  }
+
+  #chatVindu {
+    max-height: 600px;
+    min-height: 200px;
+    overflow-y: scroll;
+    padding: 0 20px 0 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .chatVindudiv {
+    display: flex;
+    margin: 12px 0;
+    align-items: center;
+  }
+  .chatVindudiv.hogre {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .chatVindudiv > div {
+    border-radius: 0 5px;
+    /* background-color: #c9d6d6; */
+    padding: 10px;
+    margin-right: 5px;
+    max-width: 60%;
+    border: 2px solid;
+    position: relative;
+  }
+  .chatVindudiv .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay:hover {
+    background: hsl(110, 76%, 53%);
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .minMelding {
+    /* border-color: #008000 !important; */
+    text-align: right;
+    /* cursor: pointer; */
+  }
+
+  .meldingTekst {
+    margin: 0 0 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bilde {
+    width: 95%;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 10px;
+    display: block;
+  }
+
+  input[type="text"],
+  select {
+    display: block; 
+    margin-top: 2px; 
+    margin: 0; 
+    font-family: inherit; 
+    color: #666666;
+    border: 2px solid rgba(0,0,0,0.1); 
+    border-radius: 4px;
+    padding: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    min-width: 130px;
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  button, input[type="file"] {
+    padding: 10px;
+    color: white;
+    text-shadow: 0 -1px 1px #335166;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+    background-color: #5588AA;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    outline: none;
+    cursor: pointer;
+  }
+  button:active {
+    transform: translate(1px,1px);
+  }
+  button.ok {
+    background-color: #66BB00;
+  }
+  button.avbryt {
+    background-color: #CC0000;
+  }
+
+  @media only screen and (orientation: portrait) {
+    body {
+      background-color: #2848ff;
+      font-size: 2em;
+    }
+    input[type="text"] {
+      width: 80%;
+      height: 100px;
+      font-size: 1em;
+    }
+    button {
+      height: 100px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    input[type="file"] {
+      font-size: 1em;
+      width: 60%;
+    }
+  }
